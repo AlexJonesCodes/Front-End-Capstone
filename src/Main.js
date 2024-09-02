@@ -40,8 +40,62 @@ return (
         </div>
 
 
-        <section id="Testimonials"></section>
-        <section id="About"></section>
+        <section id="Testimonials">
+
+        <div className='testimonial-title'>
+            <h1>Testimonials</h1>
+        </div>
+
+        <div className='testimonials'>
+
+            <div className='testimonial-1'>
+                <h2>4/5 stars</h2>
+                <img src="https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png" alt="profile1" />
+                <h3>John Doe</h3>
+                <p>Great food and service! I would definitely recommend this place to my friends and family.</p>
+            </div>
+            <div className='testimonial-2'>
+                <h2>5/5 stars</h2>
+                <img src="https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png" alt="profile2" />
+                <h3>Jane Dee</h3>
+                <p>My favorite restaurant in town! The food is always fresh and delicious.</p>
+            </div>
+            <div className='testimonial-3'>
+                <h2>5/5 stars</h2>
+                <img src="https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png" alt="profile3" />
+                <h3>Jimmy D</h3>
+                <p>Great atmosphere and friendly staff. I will definitely be coming back!</p>
+            </div>
+            <div className='testimonial-4'>
+                <h2>4/5 stars</h2>
+                <img src="https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png" alt="profile4" />
+                <h3>Jack Deman</h3>
+                <p>Delicious food and great prices. I would recommend this place to anyone.</p>
+            </div>
+
+        </div>
+
+        </section>
+
+        
+        <section id="About">
+            <div className='about-left'>
+                <h1>Little Lemon</h1>
+                <h2>Chicago</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                
+            </div>
+
+            <div className='about-right-1'>
+                <img src="https://www.foodiecrush.com/wp-content/uploads/2019/06/Greek-Salad-with-Grilled-Chicken-foodiecrush.com-005.jpg" alt="food1" />
+            </div>
+
+            <div className='about-right-2'>
+                <img src="https://th.bing.com/th/id/OIP.Dp7HNYh0SP-Ps58F6CQaZgHaLH?rs=1&pid=ImgDetMain" alt="food2" />
+            </div>
+
+
+        </section>
     </main>
 );
 }
