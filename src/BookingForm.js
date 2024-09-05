@@ -4,6 +4,8 @@ const BookingForm = ({ formData = {}, availableTimes = [], onFormChange, onSubmi
     const handleChange = (e) => {
         const { id, value } = e.target;
 
+        console.log(`Field updated: ${id}, Value: ${value}`);
+
         onFormChange({
             ...formData,
             [id]: value,
@@ -16,7 +18,7 @@ const BookingForm = ({ formData = {}, availableTimes = [], onFormChange, onSubmi
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
-        onSubmit();
+        onSubmit(formData);
     };
 
     return (
@@ -34,11 +36,17 @@ const BookingForm = ({ formData = {}, availableTimes = [], onFormChange, onSubmi
 
             <label htmlFor="time">Choose time</label>
             <select id="time" value={formData.time || ''} onChange={handleChange}>
-                {availableTimes.map((time) => (
-                    <option key={time} value={time}>
-                        {time}
+                {Array.isArray(availableTimes) && availableTimes.length > 0 ? (
+                    availableTimes.map((time) => (
+                        <option key={time} value={time}>
+                            {time}
+                        </option>
+                    ))
+                ) : (
+                    <option value="" disabled>
+                        No available times
                     </option>
-                ))}
+                )}
             </select>
 
             <label htmlFor="guests">Number of guests</label>

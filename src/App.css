@@ -360,3 +360,15 @@ form input, form select, form button {
   padding: 10px;
   font-size: 1rem;
 }
+
+.booking-confirmed {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 20px;
+  background-color: #F4CE14;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  min-height: 30vh;
+}
