@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './App.css';
 
-function Header() {
+function Order() {
   const navigate = useNavigate();
 
   const handleReserveClick = () => {
@@ -25,4 +25,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Order;

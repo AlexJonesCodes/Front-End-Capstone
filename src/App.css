@@ -323,3 +323,15 @@ button:hover {
 .footer-container ul li a:hover {
   color: #000;
 }
+
+.Reservation-Page, .Menu-Page, .Login-Page {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 20px;
+  background-color: #F4CE14;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  min-height: 30vh;
+}
