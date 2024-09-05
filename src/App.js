@@ -11,22 +11,19 @@ import Order from './Order';
 import Reservation from './Reservation';
 
 function App() {
-  // Initialize times
   const initializeTimes = () => ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'];
 
-  // Update times based on the selected date
   const updateTimes = (state, action) => {
     if (action.type === 'dateChange') {
-      // For now, return the same times regardless of date
       return initializeTimes();
     }
     return state;
   };
 
-  // Use reducer for available times
   const [availableTimes, dispatch] = useReducer(updateTimes, [], initializeTimes);
 
-  // Form data state
+  
+
   const [formData, setFormData] = useState({
     date: '',
     time: '',
@@ -72,6 +69,7 @@ function App() {
 
         <Footer />
       </div>
+
     </Router>
   );
 }

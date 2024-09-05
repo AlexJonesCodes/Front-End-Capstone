@@ -20,7 +20,10 @@ const BookingForm = ({ formData = {}, availableTimes = [], onFormChange, onSubmi
     };
 
     return (
+        
+
         <form onSubmit={handleFormSubmit}>
+            <h1>Book Now</h1>
             <label htmlFor="date">Choose date</label>
             <input
                 type="date"

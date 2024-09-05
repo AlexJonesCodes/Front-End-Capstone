@@ -5,7 +5,7 @@ function Reservation({ formData, availableTimes, onFormChange, onSubmit, dispatc
   return (
     <div className="Reservation-Page">
       <h1>Little Lemon</h1>
-      <h2>Chicago Reservation</h2>
+      
       <div className="Reservation-Page-Text">
         <BookingForm
           formData={formData}
