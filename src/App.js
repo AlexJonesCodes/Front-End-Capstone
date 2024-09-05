@@ -28,8 +28,8 @@ function App() {
 
   const initializeTimes = async () => {
     const today = new Date().toISOString().split('T')[0];
-    const availableTimes = fetchAPI(new Date(today)); // Fetch available times for today
-    console.log('Available times:', availableTimes); // Log the times
+    const availableTimes = fetchAPI(new Date(today));
+    console.log('Available times:', availableTimes);
     return availableTimes;
   };
 
@@ -37,7 +37,7 @@ function App() {
     switch(action.type) {
         case 'dateChange':
             const availableTimes = fetchAPI(new Date(action.date));
-            console.log('Updated times after date change:', availableTimes); // Log this to ensure times are updated
+            console.log('Updated times after date change:', availableTimes);
             return availableTimes || [];
         case 'init':
             return action.times || [];
@@ -73,7 +73,7 @@ function App() {
     (async () => {
         const times = await initializeTimes();
         console.log('Initialized times:', times);
-        dispatch({ type: 'init', times: times || [] }); // Ensure times is an array
+        dispatch({ type: 'init', times: times || [] });
     })();
 }, []);
 

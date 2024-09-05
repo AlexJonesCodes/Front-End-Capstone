@@ -5,7 +5,7 @@ import './App.css';
 import BookingForm from './BookingForm';
 
 function Reservation({ formData, availableTimes, onFormChange, onSubmit, dispatch }) {
-  const navigate = useNavigate(); // Move useNavigate here
+  const navigate = useNavigate();
 
   const submitForm = (formData) => {
     const success = submitAPI(formData);
@@ -25,7 +25,7 @@ function Reservation({ formData, availableTimes, onFormChange, onSubmit, dispatc
           formData={formData}
           availableTimes={availableTimes}
           onFormChange={onFormChange}
-          onSubmit={submitForm} // Pass the updated submitForm to the form
+          onSubmit={submitForm}
           dispatch={dispatch}
         />
       </div>
