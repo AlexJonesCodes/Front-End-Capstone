@@ -16,7 +16,10 @@ return (
             <label htmlFor="password">Password:</label>
             <input type="password" id="password" name="password" />
 
-            <button type="submit">Submit</button>
+            <div aria-label="On Click" role="button" onClick={handleClick}>
+                {<button type="submit">Submit</button>}
+            </div>
+
         </form>
 
     </div>

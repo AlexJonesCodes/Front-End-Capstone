@@ -32,6 +32,7 @@ const BookingForm = ({ formData = {}, availableTimes = [], onFormChange, onSubmi
                 id="date"
                 value={formData.date || ''}
                 onChange={handleChange}
+                aria-label="Select a date" 
             />
 
             <label htmlFor="time">Choose time</label>
@@ -57,6 +58,7 @@ const BookingForm = ({ formData = {}, availableTimes = [], onFormChange, onSubmi
                 min="1"
                 max="10"
                 onChange={handleChange}
+                aria-label="Select number of guests" 
             />
 
             <label htmlFor="occasion">Occasion</label>
