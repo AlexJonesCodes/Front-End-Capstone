@@ -2,9 +2,11 @@ import React from 'react';
 import './App.css';
 
 function Main() {
+    /* test for git change */
     
 return (
     <main>
+        
         <section id="Highlights">
         
         <div className='highlight-left'>
